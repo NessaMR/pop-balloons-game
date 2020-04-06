@@ -9,45 +9,43 @@
 
 	</head>
 
-	<body>
+	<body onload="startGame()">
 		<div style="float:left"; width: auto; height: 500px; background: #fff; border: solid 1px #a2a2a2">
-			<table border="1"> 
+			<table border="0" style="width: 180px;"> 
 				<tr>
 					<td>
 						<img src="images/balao_azul_grande.png"/>
 					</td>
-					<td> 10
-
+					<td style="font-size: 40px;text-align: right">	
+						<span id="completedBalloon"></span>
 					</td>
 				</tr>
 			</table>
 
 			<br/>
 
-			<table border="1"> 
+			<table border="0" style="width: 180px;"> 
 				<tr>
 					<td>
 						<img src="images/balao_azul_grande_estourado.png"/>
 					</td>
-					<td> 10
-
+					<td style="font-size: 40px;text-align: right"> 
+						<span id="popBalloon"></span>
 					</td>
 				</tr>
 			</table>
 
-			<table border="1" style="width: 140px; height: 132px;"> 
+			<table border="0" style="width: 200px; height: 132px;"> 
 				<tr>
-					<td style="background: url('images/cronometro.png)'">
-						<img src="images/cronometro.png"/>
-					</td>
-					<td> 
-						10
+					<td style="text-align: center;">
+						<img src="images/cronometro.png">
+						<span id="timer" style="color: red; font-size: 40px;"></span>
 					</td>
 				</tr>
 			</table>
 		</div>
 
-		<div style="float:left; width: 600px; height:500px; background: url('images/cenario.png'); background-position: bottom; ">
+		<div id="cenario" style="float:left; width: 600px; height:500px; background: url('images/cenario.png'); background-position: bottom; ">
 
 		</div>
 	</body>
